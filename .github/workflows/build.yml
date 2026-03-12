@@ -38,7 +38,7 @@ jobs:
         with:
           repository: ${{ inputs.site_repo }}
           ref: ${{ inputs.site_ref }}
-          token: ${{ secrets.BLOG_PAT2 }}
+          token: ${{ secrets.BLOG_TOKEN2 }}
       - uses: actions/checkout@v6
         with:
           repository: ${{ inputs.theme_repo }}
