@@ -34,8 +34,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug Secret Visibility
-        run: |
+      - run: |
           if [ -z "${{ secrets.site_repo_token }}" ]; then
             echo "SECRET IS EMPTY"
           else
