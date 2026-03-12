@@ -34,12 +34,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          if [ -z "${{ secrets.site_repo_token }}" ]; then
-            echo "SECRET IS EMPTY"
-          else
-            echo "SECRET IS DEFINED"
-          fi
       - uses: actions/checkout@v6
         with:
           repository: ${{ inputs.site_repo }}
